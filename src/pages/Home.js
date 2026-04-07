@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight, FaGraduationCap, FaBook, FaChalkboardTeacher, FaUserTie } from 'react-icons/fa';
 import './Home.css';
 
-// Import your profile image
+
 import profileImage from '../assets/images/73695.jpg';
 
 const Home = () => {
