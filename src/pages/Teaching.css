@@ -1,0 +1,156 @@
+.teaching-page {
+  padding-top: 80px;
+}
+
+.teaching-hero {
+  background: white;
+  padding: 100px 0;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.teaching-tabs-section {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+}
+
+.tabs-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.tabs-navigation button {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid #eee;
+  color: var(--text-main);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.tabs-navigation button.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.course-card-premium {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border-left: 6px solid var(--secondary-color);
+}
+
+.course-card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-premium);
+}
+
+.course-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.course-card-premium h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.course-card-premium p {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.course-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.conferences-grid-premium {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.conference-card-premium {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  align-items: center;
+  gap: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.conf-type {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.conference-card-premium h3 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.conf-meta {
+  display: flex;
+  gap: 20px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .conference-card-premium {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .conf-meta {
+    justify-content: center;
+  }
+
+  .tabs-navigation {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
