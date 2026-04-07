@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2328d399.css",
-    "main.js": "/portfolio/static/js/main.1d774b94.js",
+    "main.js": "/portfolio/static/js/main.88e2add1.js",
     "static/media/73695.jpg": "/portfolio/static/media/73695.648590d7ee27e7691402.jpg",
     "static/media/du-logo.jpg": "/portfolio/static/media/du-logo.e7f079c12f218b782632.jpg",
     "index.html": "/portfolio/index.html",
     "main.2328d399.css.map": "/portfolio/static/css/main.2328d399.css.map",
-    "main.1d774b94.js.map": "/portfolio/static/js/main.1d774b94.js.map"
+    "main.88e2add1.js.map": "/portfolio/static/js/main.88e2add1.js.map"
   },
   "entrypoints": [
     "static/css/main.2328d399.css",
-    "static/js/main.1d774b94.js"
+    "static/js/main.88e2add1.js"
   ]
 }
