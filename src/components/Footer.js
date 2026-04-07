@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Contact info restored per user request */}
         <div className="footer-section">
           <div className="footer-section-header">
             <FaUniversity className="section-icon" />
@@ -34,14 +33,13 @@ const Footer = () => {
             <h3>Academic Portfolio</h3>
           </div>
           <div className="footer-links">
-            <a href="/about">About</a>
-            <a href="/research">Research</a>
+            <a href="/about">Acedmic Profile</a>
+            <a href="/research">Research  Projects</a>
             <a href="/publications">Publications</a>
-            <a href="/teaching">Teaching</a>
+            <a href="/teaching">Teaching Portfolio</a>
           </div>
         </div>
         
-        {/* 'Connect & Collaborate' section removed per user request */}
       </div>
 
       <div className="footer-bottom">
