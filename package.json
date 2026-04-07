@@ -1,7 +1,7 @@
 {
   "name": "portfolio-frontend",
   "version": "0.1.0",
-  "homepage": "https://Varunjogi-03.github.io/DRSP/",
+  "homepage": "https://ashish-ranjan612.github.io/portfolio/",
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
@@ -16,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "rmdir /s /q docs && move build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DRSP/static/css/main.9338fa69.css",
-    "main.js": "/DRSP/static/js/main.fdd0777c.js",
-    "static/media/73695.jpg": "/DRSP/static/media/73695.648590d7ee27e7691402.jpg",
-    "static/media/du-logo.jpg": "/DRSP/static/media/du-logo.e7f079c12f218b782632.jpg",
-    "index.html": "/DRSP/index.html",
-    "main.9338fa69.css.map": "/DRSP/static/css/main.9338fa69.css.map",
-    "main.fdd0777c.js.map": "/DRSP/static/js/main.fdd0777c.js.map"
+    "main.css": "/portfolio/static/css/main.9338fa69.css",
+    "main.js": "/portfolio/static/js/main.6dd3a6eb.js",
+    "static/media/73695.jpg": "/portfolio/static/media/73695.648590d7ee27e7691402.jpg",
+    "static/media/du-logo.jpg": "/portfolio/static/media/du-logo.e7f079c12f218b782632.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.9338fa69.css.map": "/portfolio/static/css/main.9338fa69.css.map",
+    "main.6dd3a6eb.js.map": "/portfolio/static/js/main.6dd3a6eb.js.map"
   },
   "entrypoints": [
     "static/css/main.9338fa69.css",
-    "static/js/main.fdd0777c.js"
+    "static/js/main.6dd3a6eb.js"
   ]
 }
