@@ -1,11 +1,12 @@
 import React from 'react';
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGoogle, FaGraduationCap, FaUniversity } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaGraduationCap, FaUniversity } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+        {/* Contact info restored per user request */}
         <div className="footer-section">
           <div className="footer-section-header">
             <FaUniversity className="section-icon" />
@@ -33,31 +34,19 @@ const Footer = () => {
             <h3>Academic Portfolio</h3>
           </div>
           <div className="footer-links">
-            <a href="/about">Academic Profile</a>
-            <a href="/research">Research Projects</a>
+            <a href="/about">About</a>
+            <a href="/research">Research</a>
             <a href="/publications">Publications</a>
-            <a href="/teaching">Teaching Portfolio</a>
+            <a href="/teaching">Teaching</a>
           </div>
         </div>
-
-        <div className="footer-section">
-          <div className="footer-section-header">
-            <FaLinkedin className="section-icon" />
-            <h3>Connect & Collaborate</h3>
-          </div>
-          <div className="footer-social">
-            <span className="social-link">Ph: 011-27667030</span>
-          </div>
-          <div className="footer-info">
-            <p>For academic collaborations, research discussions, or professional inquiries.</p>
-          </div>
-        </div>
+        
+        {/* 'Connect & Collaborate' section removed per user request */}
       </div>
 
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p>&copy; {new Date().getFullYear()} Professor Ashish Ranjan - University of Delhi. All rights reserved.</p>
-          <p className="footer-credits">Academic Portfolio</p>
         </div>
       </div>
     </footer>

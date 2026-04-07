@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaBuilding, FaGraduationCap, FaUserTie, FaHistory, FaGlobe, FaChalkboardTeacher, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaBuilding, FaGraduationCap, FaHistory, FaGlobe, FaChalkboardTeacher, FaMapMarkerAlt } from 'react-icons/fa';
 import './About.css';
 
 // Import your profile image
@@ -70,7 +70,7 @@ const About = () => {
     <div className="about-premium">
       <div className="bg-mesh"></div>
       
-      {/* Layered Profile Hero */}
+      {/* Simple Profile Hero */}
       <section className="profile-layered-hero">
         <div className="section-container">
           <div className="hero-flex-layout">
@@ -78,15 +78,9 @@ const About = () => {
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="photo-stack"
+              className="photo-simple"
             >
-              <div className="stack-bg"></div>
-              <div className="stack-glass"></div>
               <img src={profileImage} alt={profile.name} className="profile-img-main" />
-              <div className="experience-tag">
-                <FaHistory />
-                <span>20+ Years</span>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -95,9 +89,9 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="profile-info-premium"
             >
-              <div className="profile-label">Expert Academician</div>
+              <div className="profile-label">Professor</div>
               <h1 className="name-display">{profile.name}</h1>
-              <p className="title-display">{profile.title} at {profile.institution}</p>
+              <p className="title-display">{profile.institution}</p>
               
               <div className="contact-pills">
                 <div className="contact-pill">

@@ -105,37 +105,14 @@
   color: white;
 }
 
-/* Visual Layered Frame */
+/* Visual Simple Frame */
 .hero-visual {
   position: relative;
 }
 
-.layered-frame {
+.simple-frame {
   position: relative;
   width: 100%;
-}
-
-.frame-bg {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 100%;
-  height: 100%;
-  background: var(--secondary-color);
-  border-radius: var(--border-radius-lg);
-  z-index: -1;
-  opacity: 0.1;
-}
-
-.frame-border {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 160px;
-  height: 160px;
-  border: 8px solid var(--secondary-color);
-  border-radius: 0 var(--border-radius-lg) 0 0;
-  z-index: -1;
 }
 
 .main-photo {
@@ -145,39 +122,7 @@
   box-shadow: var(--shadow-premium);
   display: block;
   transition: var(--transition);
-}
-
-.main-photo:hover {
-  transform: scale(1.02);
-}
-
-.floating-badge {
-  position: absolute;
-  bottom: 30px;
-  left: -30px;
-  background: white;
-  padding: 15px 25px;
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.floating-badge svg {
-  color: var(--secondary-color);
-  font-size: 1.5rem;
-}
-
-.floating-badge span {
-  font-weight: 800;
-  color: var(--primary-color);
+  border: 4px solid white;
 }
 
 /* Stats Bar */

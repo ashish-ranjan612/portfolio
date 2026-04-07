@@ -10,27 +10,33 @@
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Changed to 1fr 1fr since 3rd col is removed */
   gap: 60px;
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  font-size: 1.25rem;
+  margin: 0;
   font-weight: 700;
   color: white;
-  position: relative;
-  display: inline-block;
+  line-height: 1.2;
 }
 
-.footer-section h3::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: var(--secondary-color);
+.footer-section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  height: 24px; /* Fixed height for header area to ensure alignment */
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
 }
 
 .footer-contact {
@@ -74,16 +80,9 @@
   margin: 60px auto 0;
   padding: 30px 20px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.5);
-}
-
-.footer-credits {
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 768px) {
@@ -93,9 +92,8 @@
     text-align: center;
   }
 
-  .footer-section h3::after {
-    left: 50%;
-    transform: translateX(-50%);
+  .footer-section-header {
+    justify-content: center;
   }
 
   .contact-item {

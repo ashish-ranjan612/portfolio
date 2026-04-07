@@ -32,19 +32,19 @@ const Home = () => {
   const quickLinks = [
     { 
       icon: <FaUserTie />, 
-      title: 'Academic Profile', 
+      title: 'About', 
       path: '/about', 
       desc: 'Explore the journey and professional achievements.' 
     },
     { 
       icon: <FaBook />, 
-      title: 'Research Portal', 
+      title: 'Research', 
       path: '/research', 
       desc: 'Deep dive into scholarly projects and impact areas.' 
     },
     { 
       icon: <FaChalkboardTeacher />, 
-      title: 'Instruction', 
+      title: 'Teaching', 
       path: '/teaching', 
       desc: 'Nurturing future educators through pedagogy.' 
     }
@@ -75,29 +75,23 @@ const Home = () => {
               
               <div className="hero-actions">
                 <Link to="/about" className="btn-premium">
-                  View Full Profile <FaArrowRight />
+                  Profile <FaArrowRight />
                 </Link>
-                <Link to="/publications" className="btn-secondary-premium">
-                  Scholarly Works
+                <Link to="/research" className="btn-secondary-premium">
+                  Research
                 </Link>
               </div>
             </motion.div>
 
-            {/* Right Image with Layered Frame */}
+            {/* Right Image - Simplified */}
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               className="hero-visual"
             >
-              <div className="layered-frame">
-                <div className="frame-bg"></div>
-                <div className="frame-border"></div>
+              <div className="simple-frame">
                 <img src={profileImage} alt={profile.name} className="main-photo" />
-                <div className="floating-badge">
-                  <FaGraduationCap />
-                  <span>20+ Yrs</span>
-                </div>
               </div>
             </motion.div>
           </div>
